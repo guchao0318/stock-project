@@ -1,0 +1,100 @@
+version: '3.8'
+
+services:
+  # 股票数据API服务
+  stock-api:
+    build: .
+    container_name: stock-api
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - AUTO_START_SCHEDULER=true
+      - LOG_LEVEL=INFO
+      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_PORT=9200
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./logs:/app/logs
+      - ./config:/app/config
+    depends_on:
+      - elasticsearch
+      - redis
+    restart: unless-stopped
+    networks:
+      - stock-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Elasticsearch服务
+  elasticsearch:
+    image: elasticsearch:8.11.0
+    container_name: stock-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    restart: unless-stopped
+    networks:
+      - stock-network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # Redis服务（用于缓存和限流）
+  redis:
+    image: redis:7-alpine
+    container_name: stock-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - stock-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # Nginx反向代理（可选）
+  nginx:
+    image: nginx:alpine
+    container_name: stock-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - stock-api
+    restart: unless-stopped
+    networks:
+      - stock-network
+    profiles:
+      - production
+
+volumes:
+  elasticsearch_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  stock-network:
+    driver: bridge

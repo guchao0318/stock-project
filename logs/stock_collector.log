@@ -1,0 +1,1377 @@
+2025-09-17 13:45:13 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 13:45:13 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 13:45:13 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 13:45:30 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 13:45:31 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 13:45:33 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 13:47:21 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 13:47:21 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 13:47:21 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 13:47:23 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 13:47:24 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 13:47:24 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 13:47:39 | INFO | __main__:signal_handler:48 | 接收到信号 2，正在停止程序...
+2025-09-17 13:47:39 | INFO | __main__:signal_handler:54 | 程序已停止
+2025-09-17 13:49:32 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 13:49:32 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 13:49:32 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 13:49:34 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 13:49:34 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 13:49:35 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 13:49:38 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 13:49:38 | ERROR | src.data_storage.es_storage:_connect:48 | 连接Elasticsearch异常: Elasticsearch.__init__() got an unexpected keyword argument 'timeout'
+2025-09-17 13:49:38 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 13:49:38 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 13:49:38 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 13:49:38 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 13:49:38 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 13:49:38 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 13:50:29 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:45 | 成功获取深圳A股数据，共3051条记录
+2025-09-17 13:50:29 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理3051条记录
+2025-09-17 13:50:29 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 13:50:52 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:63 | 成功获取上海A股数据，共2419条记录
+2025-09-17 13:50:52 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理2419条记录
+2025-09-17 13:50:52 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取5470条股票数据
+2025-09-17 13:50:53 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共5470条记录
+2025-09-17 13:50:53 | INFO | src.scheduler.task_scheduler:collect_and_save_data:38 | 成功采集到5470条股票数据
+2025-09-17 13:50:53 | INFO | src.scheduler.task_scheduler:collect_and_save_data:41 | 正在保存数据到Elasticsearch...
+2025-09-17 13:50:53 | ERROR | src.data_storage.es_storage:save_stock_data:134 | Elasticsearch客户端未连接
+2025-09-17 13:50:53 | ERROR | src.scheduler.task_scheduler:collect_and_save_data:58 | 数据保存失败
+2025-09-17 13:50:53 | ERROR | __main__:run_once:78 | 数据采集执行失败
+2025-09-17 13:50:53 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 14:20:44 | INFO | __main__:signal_handler:48 | 接收到信号 2，正在停止程序...
+2025-09-17 14:20:44 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 14:20:44 | INFO | __main__:signal_handler:54 | 程序已停止
+2025-09-17 14:21:02 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 14:21:02 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 14:21:02 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 14:21:02 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 14:21:03 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 14:21:03 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 14:21:09 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 14:28:37 | INFO | __main__:signal_handler:48 | 接收到信号 2，正在停止程序...
+2025-09-17 14:28:37 | INFO | __main__:signal_handler:54 | 程序已停止
+2025-09-17 14:48:40 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 14:48:40 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 14:48:40 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 14:48:42 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 14:48:43 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 14:48:43 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 14:48:47 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 15:01:53 | INFO | __main__:signal_handler:48 | 接收到信号 2，正在停止程序...
+2025-09-17 15:01:53 | INFO | __main__:signal_handler:54 | 程序已停止
+2025-09-17 15:11:30 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 15:11:30 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 15:11:30 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 15:11:30 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 15:11:30 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 15:11:30 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 15:11:30 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 15:11:56 | ERROR | src.data_storage.es_storage:_connect:48 | 连接Elasticsearch异常: NodeConfig.__init__() missing 1 required positional argument: 'scheme'
+2025-09-17 15:11:56 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 15:11:56 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 15:11:56 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 15:11:56 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 15:11:56 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 15:11:56 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 15:12:11 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:45 | 成功获取深圳A股数据，共3051条记录
+2025-09-17 15:12:11 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理3051条记录
+2025-09-17 15:12:11 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 15:12:23 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:63 | 成功获取上海A股数据，共2419条记录
+2025-09-17 15:12:23 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理2419条记录
+2025-09-17 15:12:23 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取5470条股票数据
+2025-09-17 15:12:23 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共5470条记录
+2025-09-17 15:12:23 | INFO | src.scheduler.task_scheduler:collect_and_save_data:38 | 成功采集到5470条股票数据
+2025-09-17 15:12:23 | INFO | src.scheduler.task_scheduler:collect_and_save_data:41 | 正在保存数据到Elasticsearch...
+2025-09-17 15:12:23 | ERROR | src.data_storage.es_storage:save_stock_data:134 | Elasticsearch客户端未连接
+2025-09-17 15:12:23 | ERROR | src.scheduler.task_scheduler:collect_and_save_data:58 | 数据保存失败
+2025-09-17 15:12:23 | ERROR | __main__:run_once:78 | 数据采集执行失败
+2025-09-17 15:12:23 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 15:54:36 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 15:54:36 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 15:54:36 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 15:54:36 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 15:54:36 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 15:54:36 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 15:54:36 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:00:33 | INFO | __main__:signal_handler:48 | 接收到信号 2，正在停止程序...
+2025-09-17 16:00:33 | INFO | __main__:signal_handler:54 | 程序已停止
+2025-09-17 16:00:38 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 16:00:38 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 16:00:38 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 16:00:38 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 16:00:38 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 16:00:38 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 16:00:38 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:01:11 | ERROR | src.data_storage.es_storage:_connect:48 | 连接Elasticsearch异常: NodeConfig.__init__() missing 1 required positional argument: 'scheme'
+2025-09-17 16:01:11 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 16:01:11 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 16:01:11 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 16:01:11 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 16:01:11 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 16:01:11 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 16:01:23 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:45 | 成功获取深圳A股数据，共3051条记录
+2025-09-17 16:01:23 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理3051条记录
+2025-09-17 16:01:24 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 16:01:30 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:63 | 成功获取上海A股数据，共2419条记录
+2025-09-17 16:01:30 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理2419条记录
+2025-09-17 16:01:31 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取5470条股票数据
+2025-09-17 16:01:31 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共5470条记录
+2025-09-17 16:01:31 | INFO | src.scheduler.task_scheduler:collect_and_save_data:38 | 成功采集到5470条股票数据
+2025-09-17 16:01:31 | INFO | src.scheduler.task_scheduler:collect_and_save_data:41 | 正在保存数据到Elasticsearch...
+2025-09-17 16:01:31 | ERROR | src.data_storage.es_storage:save_stock_data:134 | Elasticsearch客户端未连接
+2025-09-17 16:01:31 | ERROR | src.scheduler.task_scheduler:collect_and_save_data:58 | 数据保存失败
+2025-09-17 16:01:31 | ERROR | __main__:run_once:78 | 数据采集执行失败
+2025-09-17 16:01:31 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 16:01:58 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 16:01:58 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 16:01:58 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 16:01:58 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 16:01:58 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 16:01:58 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 16:01:58 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:02:12 | ERROR | src.data_storage.es_storage:_connect:48 | 连接Elasticsearch异常: NodeConfig.__init__() missing 1 required positional argument: 'scheme'
+2025-09-17 16:02:49 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 16:02:49 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 16:02:49 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 16:02:49 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 16:02:49 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 16:02:49 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 16:02:57 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:45 | 成功获取深圳A股数据，共3051条记录
+2025-09-17 16:02:57 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理3051条记录
+2025-09-17 16:02:57 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 16:03:04 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:63 | 成功获取上海A股数据，共2419条记录
+2025-09-17 16:03:04 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理2419条记录
+2025-09-17 16:03:04 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取5470条股票数据
+2025-09-17 16:03:05 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共5470条记录
+2025-09-17 16:03:05 | INFO | src.scheduler.task_scheduler:collect_and_save_data:38 | 成功采集到5470条股票数据
+2025-09-17 16:03:05 | INFO | src.scheduler.task_scheduler:collect_and_save_data:41 | 正在保存数据到Elasticsearch...
+2025-09-17 16:03:05 | ERROR | src.data_storage.es_storage:save_stock_data:134 | Elasticsearch客户端未连接
+2025-09-17 16:03:05 | ERROR | src.scheduler.task_scheduler:collect_and_save_data:58 | 数据保存失败
+2025-09-17 16:03:57 | INFO | __main__:signal_handler:48 | 接收到信号 2，正在停止程序...
+2025-09-17 16:03:57 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 16:03:57 | INFO | __main__:signal_handler:54 | 程序已停止
+2025-09-17 16:04:02 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 16:04:02 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 16:04:02 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 16:04:02 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 16:04:02 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 16:04:02 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 16:04:02 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:04:02 | ERROR | src.data_storage.es_storage:_connect:48 | 连接Elasticsearch异常: NodeConfig.__init__() missing 1 required positional argument: 'scheme'
+2025-09-17 16:04:02 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 16:04:02 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 16:04:02 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 16:04:02 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 16:04:02 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 16:04:02 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 16:04:37 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:45 | 成功获取深圳A股数据，共3051条记录
+2025-09-17 16:04:37 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理3051条记录
+2025-09-17 16:04:37 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 16:04:48 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:63 | 成功获取上海A股数据，共2419条记录
+2025-09-17 16:04:48 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理2419条记录
+2025-09-17 16:04:49 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取5470条股票数据
+2025-09-17 16:04:49 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共5470条记录
+2025-09-17 16:04:49 | INFO | src.scheduler.task_scheduler:collect_and_save_data:38 | 成功采集到5470条股票数据
+2025-09-17 16:04:49 | INFO | src.scheduler.task_scheduler:collect_and_save_data:41 | 正在保存数据到Elasticsearch...
+2025-09-17 16:06:22 | ERROR | src.data_storage.es_storage:save_stock_data:134 | Elasticsearch客户端未连接
+2025-09-17 16:09:40 | INFO | __main__:signal_handler:48 | 接收到信号 2，正在停止程序...
+2025-09-17 16:09:40 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 16:09:40 | INFO | __main__:signal_handler:54 | 程序已停止
+2025-09-17 16:12:38 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 16:12:38 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 16:12:38 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 16:12:38 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 16:12:38 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 16:12:38 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 16:12:38 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:12:39 | INFO | src.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-17 16:12:39 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 16:12:39 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 16:12:39 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 16:12:39 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 16:12:39 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 16:12:39 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 16:12:46 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:45 | 成功获取深圳A股数据，共3051条记录
+2025-09-17 16:12:46 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理3051条记录
+2025-09-17 16:12:46 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 16:12:52 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:63 | 成功获取上海A股数据，共2419条记录
+2025-09-17 16:12:52 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理2419条记录
+2025-09-17 16:12:52 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取5470条股票数据
+2025-09-17 16:12:52 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共5470条记录
+2025-09-17 16:12:52 | INFO | src.scheduler.task_scheduler:collect_and_save_data:38 | 成功采集到5470条股票数据
+2025-09-17 16:12:52 | INFO | src.scheduler.task_scheduler:collect_and_save_data:41 | 正在保存数据到Elasticsearch...
+2025-09-17 16:13:05 | INFO | src.data_storage.es_storage:_ensure_index_exists:60 | 创建索引: stock_basic_data
+2025-09-17 16:13:05 | ERROR | src.data_storage.es_storage:_ensure_index_exists:85 | 确保索引存在异常: BadRequestError(400, 'mapper_parsing_exception', 'Failed to parse mapping: analyzer [ik_max_word] has not been configured in mappings', analyzer [ik_max_word] has not been configured in mappings)
+2025-09-17 16:13:35 | ERROR | src.scheduler.task_scheduler:collect_and_save_data:58 | 数据保存失败
+2025-09-17 16:13:35 | ERROR | __main__:run_once:78 | 数据采集执行失败
+2025-09-17 16:13:35 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 16:13:53 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 16:13:53 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 16:13:53 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 16:13:53 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 16:13:53 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 16:13:53 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 16:13:53 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:13:59 | INFO | src.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-17 16:14:05 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 16:14:05 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 16:14:05 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 16:14:05 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 16:14:05 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 16:14:05 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 16:14:21 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:45 | 成功获取深圳A股数据，共3051条记录
+2025-09-17 16:14:21 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理3051条记录
+2025-09-17 16:14:21 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 16:14:37 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:63 | 成功获取上海A股数据，共2419条记录
+2025-09-17 16:14:37 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理2419条记录
+2025-09-17 16:14:37 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取5470条股票数据
+2025-09-17 16:14:37 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共5470条记录
+2025-09-17 16:14:37 | INFO | src.scheduler.task_scheduler:collect_and_save_data:38 | 成功采集到5470条股票数据
+2025-09-17 16:14:37 | INFO | src.scheduler.task_scheduler:collect_and_save_data:41 | 正在保存数据到Elasticsearch...
+2025-09-17 16:15:32 | INFO | __main__:signal_handler:48 | 接收到信号 2，正在停止程序...
+2025-09-17 16:15:32 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 16:15:32 | INFO | __main__:signal_handler:54 | 程序已停止
+2025-09-17 16:15:37 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 16:15:37 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 16:15:37 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 16:15:37 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 16:15:37 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 16:15:37 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 16:15:37 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:15:37 | INFO | src.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-17 16:15:37 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 16:15:37 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 16:15:37 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 16:15:37 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 16:15:37 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 16:15:37 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 16:15:48 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:45 | 成功获取深圳A股数据，共3051条记录
+2025-09-17 16:15:48 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理3051条记录
+2025-09-17 16:15:48 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 16:15:55 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:63 | 成功获取上海A股数据，共2419条记录
+2025-09-17 16:15:55 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理2419条记录
+2025-09-17 16:15:55 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取5470条股票数据
+2025-09-17 16:15:55 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共5470条记录
+2025-09-17 16:15:55 | INFO | src.scheduler.task_scheduler:collect_and_save_data:38 | 成功采集到5470条股票数据
+2025-09-17 16:15:55 | INFO | src.scheduler.task_scheduler:collect_and_save_data:41 | 正在保存数据到Elasticsearch...
+2025-09-17 16:16:41 | INFO | src.data_storage.es_storage:_ensure_index_exists:60 | 创建索引: stock_basic_data
+2025-09-17 16:17:13 | ERROR | src.data_storage.es_storage:_ensure_index_exists:85 | 确保索引存在异常: BadRequestError(400, 'mapper_parsing_exception', 'Failed to parse mapping: analyzer [ik_max_word] has not been configured in mappings', analyzer [ik_max_word] has not been configured in mappings)
+2025-09-17 16:18:48 | INFO | __main__:signal_handler:48 | 接收到信号 2，正在停止程序...
+2025-09-17 16:18:48 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 16:18:48 | INFO | __main__:signal_handler:54 | 程序已停止
+2025-09-17 16:23:35 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 16:23:35 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 16:23:35 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 16:23:35 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 16:23:35 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 16:23:35 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 16:23:35 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:23:35 | INFO | src.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-17 16:23:35 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 16:23:35 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 16:23:35 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 16:23:35 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 16:23:35 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 16:23:35 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 16:23:40 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第1次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=18&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:23:45 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第2次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:23:50 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第3次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:23:50 | ERROR | src.data_collector.stock_collector:_retry_request:33 | 重试3次后仍然失败
+2025-09-17 16:23:50 | ERROR | src.data_collector.stock_collector:get_sz_a_stock_data:48 | 获取深圳A股数据失败
+2025-09-17 16:23:50 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 16:23:50 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第1次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A1+t%3A2%2Cm%3A1+t%3A23&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:23:56 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第2次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A1+t%3A2%2Cm%3A1+t%3A23&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:24:01 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第3次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A1+t%3A2%2Cm%3A1+t%3A23&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:24:01 | ERROR | src.data_collector.stock_collector:_retry_request:33 | 重试3次后仍然失败
+2025-09-17 16:24:01 | ERROR | src.data_collector.stock_collector:get_sh_a_stock_data:66 | 获取上海A股数据失败
+2025-09-17 16:24:01 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取0条股票数据
+2025-09-17 16:24:01 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共0条记录
+2025-09-17 16:24:01 | ERROR | src.scheduler.task_scheduler:collect_and_save_data:35 | 未获取到股票数据
+2025-09-17 16:24:01 | ERROR | __main__:run_once:78 | 数据采集执行失败
+2025-09-17 16:24:01 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 16:24:11 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 16:24:11 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 16:24:11 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 16:24:11 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 16:24:11 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 16:24:11 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 16:24:11 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:24:11 | INFO | src.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-17 16:24:11 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 16:24:11 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 16:24:11 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 16:24:11 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 16:24:11 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 16:24:11 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 16:24:12 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第1次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:24:17 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第2次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:24:22 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第3次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:24:22 | ERROR | src.data_collector.stock_collector:_retry_request:33 | 重试3次后仍然失败
+2025-09-17 16:24:22 | ERROR | src.data_collector.stock_collector:get_sz_a_stock_data:48 | 获取深圳A股数据失败
+2025-09-17 16:24:22 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 16:24:22 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第1次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A1+t%3A2%2Cm%3A1+t%3A23&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:24:28 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第2次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A1+t%3A2%2Cm%3A1+t%3A23&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:24:33 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第3次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A1+t%3A2%2Cm%3A1+t%3A23&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:24:33 | ERROR | src.data_collector.stock_collector:_retry_request:33 | 重试3次后仍然失败
+2025-09-17 16:24:33 | ERROR | src.data_collector.stock_collector:get_sh_a_stock_data:66 | 获取上海A股数据失败
+2025-09-17 16:24:33 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取0条股票数据
+2025-09-17 16:24:33 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共0条记录
+2025-09-17 16:24:33 | ERROR | src.scheduler.task_scheduler:collect_and_save_data:35 | 未获取到股票数据
+2025-09-17 16:24:33 | ERROR | __main__:run_once:78 | 数据采集执行失败
+2025-09-17 16:24:33 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 16:36:36 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 16:36:36 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 16:36:36 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 16:36:36 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 16:36:36 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 16:36:36 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 16:36:36 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:36:36 | INFO | src.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-17 16:36:36 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 16:36:36 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 16:36:36 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 16:36:36 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 16:36:36 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 16:36:36 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 16:36:36 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第1次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:36:41 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第2次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:36:47 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第3次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:36:47 | ERROR | src.data_collector.stock_collector:_retry_request:33 | 重试3次后仍然失败
+2025-09-17 16:36:47 | ERROR | src.data_collector.stock_collector:get_sz_a_stock_data:48 | 获取深圳A股数据失败
+2025-09-17 16:36:47 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 16:36:47 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第1次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A1+t%3A2%2Cm%3A1+t%3A23&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:36:52 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第2次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A1+t%3A2%2Cm%3A1+t%3A23&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:36:57 | ERROR | src.data_collector.stock_collector:_retry_request:29 | 第3次尝试失败: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A1+t%3A2%2Cm%3A1+t%3A23&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-17 16:36:57 | ERROR | src.data_collector.stock_collector:_retry_request:33 | 重试3次后仍然失败
+2025-09-17 16:36:57 | ERROR | src.data_collector.stock_collector:get_sh_a_stock_data:66 | 获取上海A股数据失败
+2025-09-17 16:36:57 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取0条股票数据
+2025-09-17 16:36:57 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共0条记录
+2025-09-17 16:36:57 | ERROR | src.scheduler.task_scheduler:collect_and_save_data:35 | 未获取到股票数据
+2025-09-17 16:36:57 | ERROR | __main__:run_once:78 | 数据采集执行失败
+2025-09-17 16:36:57 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-17 16:37:53 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-17 16:37:53 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-17 16:37:53 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-17 16:37:53 | INFO | __main__:main:204 | 股票数据采集系统启动
+2025-09-17 16:37:53 | INFO | __main__:main:205 | Python版本: 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-09-17 16:37:53 | INFO | __main__:main:206 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-17 16:37:53 | INFO | __main__:run_once:63 | 开始手动执行数据采集
+2025-09-17 16:37:53 | INFO | src.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-17 16:37:53 | INFO | src.scheduler.task_scheduler:run_once:86 | 手动执行数据采集任务
+2025-09-17 16:37:53 | INFO | src.scheduler.task_scheduler:collect_and_save_data:27 | 开始执行定时数据采集任务
+2025-09-17 16:37:53 | INFO | src.scheduler.task_scheduler:collect_and_save_data:31 | 正在采集股票数据...
+2025-09-17 16:37:53 | INFO | src.data_collector.stock_collector:get_stock_basic_info:134 | 开始获取股票基础信息
+2025-09-17 16:37:53 | INFO | src.data_collector.stock_collector:collect_all_stock_data:112 | 开始采集所有股票数据
+2025-09-17 16:37:53 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:38 | 开始获取深圳A股数据
+2025-09-17 16:38:33 | INFO | src.data_collector.stock_collector:get_sz_a_stock_data:45 | 成功获取深圳A股数据，共3051条记录
+2025-09-17 16:38:33 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理3051条记录
+2025-09-17 16:38:33 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:56 | 开始获取上海A股数据
+2025-09-17 16:38:51 | INFO | src.data_collector.stock_collector:get_sh_a_stock_data:63 | 成功获取上海A股数据，共2419条记录
+2025-09-17 16:38:51 | INFO | src.data_collector.stock_collector:_clean_and_transform_data:103 | 数据清洗完成，处理2419条记录
+2025-09-17 16:38:51 | INFO | src.data_collector.stock_collector:collect_all_stock_data:129 | 数据采集完成，共获取5470条股票数据
+2025-09-17 16:38:51 | INFO | src.data_collector.stock_collector:get_stock_basic_info:167 | 获取股票基础信息完成，共5470条记录
+2025-09-17 16:38:51 | INFO | src.scheduler.task_scheduler:collect_and_save_data:38 | 成功采集到5470条股票数据
+2025-09-17 16:38:51 | INFO | src.scheduler.task_scheduler:collect_and_save_data:41 | 正在保存数据到Elasticsearch...
+2025-09-17 16:39:24 | INFO | src.data_storage.es_storage:save_stock_data:147 | 清空原有数据
+2025-09-17 16:39:25 | INFO | src.data_storage.es_storage:clear_index:123 | 清空索引完成，删除2条记录
+2025-09-17 16:39:33 | INFO | src.data_storage.es_storage:save_stock_data:157 | 开始批量保存5470条股票数据
+2025-09-17 16:39:57 | INFO | src.data_storage.es_storage:save_stock_data:178 | 批次1: 成功1000条, 失败0条
+2025-09-17 16:40:07 | INFO | src.data_storage.es_storage:save_stock_data:178 | 批次2: 成功1000条, 失败0条
+2025-09-17 16:40:12 | INFO | src.data_storage.es_storage:save_stock_data:178 | 批次3: 成功1000条, 失败0条
+2025-09-17 16:40:19 | INFO | src.data_storage.es_storage:save_stock_data:178 | 批次4: 成功1000条, 失败0条
+2025-09-17 16:40:25 | INFO | src.data_storage.es_storage:save_stock_data:178 | 批次5: 成功1000条, 失败0条
+2025-09-17 16:40:25 | INFO | src.data_storage.es_storage:save_stock_data:178 | 批次6: 成功470条, 失败0条
+2025-09-17 16:40:29 | INFO | src.data_storage.es_storage:save_stock_data:188 | 数据保存完成: 成功5470条, 失败0条
+2025-09-17 16:40:36 | INFO | src.scheduler.task_scheduler:collect_and_save_data:51 | 数据采集任务完成
+2025-09-17 16:40:36 | INFO | src.scheduler.task_scheduler:collect_and_save_data:52 | 采集数据量: 5470条
+2025-09-17 16:40:36 | INFO | src.scheduler.task_scheduler:collect_and_save_data:53 | 保存数据量: 5470条
+2025-09-17 16:40:37 | INFO | src.scheduler.task_scheduler:collect_and_save_data:54 | 执行时间: 161.06秒
+2025-09-17 16:40:39 | INFO | __main__:run_once:70 | 数据采集执行成功
+2025-09-17 16:40:39 | INFO | __main__:run_once:74 | 当前数据总量: 5470条
+2025-09-17 16:40:39 | WARNING | src.scheduler.task_scheduler:stop:131 | 调度器未在运行
+2025-09-18 16:00:23 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 16:00:23 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 16:00:23 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 16:00:23 | INFO | __main__:main:73 | 股票数据采集API服务器启动
+2025-09-18 16:00:23 | INFO | __main__:main:74 | Python版本: 3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-09-18 16:00:23 | INFO | __main__:main:75 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-18 16:00:23 | INFO | __main__:main:76 | 服务地址: http://127.0.0.1:5000
+2025-09-18 16:00:23 | INFO | __main__:main:110 | 开发模式运行
+2025-09-18 16:00:30 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 16:00:30 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 16:00:30 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 16:00:30 | INFO | __main__:main:73 | 股票数据采集API服务器启动
+2025-09-18 16:00:30 | INFO | __main__:main:74 | Python版本: 3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-09-18 16:00:30 | INFO | __main__:main:75 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-18 16:00:30 | INFO | __main__:main:76 | 服务地址: http://127.0.0.1:5000
+2025-09-18 16:00:30 | INFO | __main__:main:110 | 开发模式运行
+2025-09-18 17:22:14 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 17:22:14 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 17:22:14 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 17:22:14 | INFO | __main__:main:73 | 股票数据采集API服务器启动
+2025-09-18 17:22:14 | INFO | __main__:main:74 | Python版本: 3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-09-18 17:22:14 | INFO | __main__:main:75 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-18 17:22:14 | INFO | __main__:main:76 | 服务地址: http://127.0.0.1:5000
+2025-09-18 17:22:14 | INFO | __main__:main:110 | 开发模式运行
+2025-09-18 17:23:34 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 17:23:34 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 17:23:34 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 17:23:34 | INFO | __main__:main:73 | 股票数据采集API服务器启动
+2025-09-18 17:23:34 | INFO | __main__:main:74 | Python版本: 3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-09-18 17:23:34 | INFO | __main__:main:75 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-18 17:23:34 | INFO | __main__:main:76 | 服务地址: http://127.0.0.1:5000
+2025-09-18 17:23:34 | INFO | __main__:main:110 | 开发模式运行
+2025-09-18 17:24:22 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 17:24:22 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 17:24:22 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 17:24:22 | INFO | __main__:main:73 | 股票数据采集API服务器启动
+2025-09-18 17:24:22 | INFO | __main__:main:74 | Python版本: 3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-09-18 17:24:22 | INFO | __main__:main:75 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-18 17:24:22 | INFO | __main__:main:76 | 服务地址: http://127.0.0.1:5000
+2025-09-18 17:24:22 | INFO | __main__:main:110 | 开发模式运行
+2025-09-18 17:24:54 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 17:24:54 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 17:24:54 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 17:24:54 | INFO | __main__:main:73 | 股票数据采集API服务器启动
+2025-09-18 17:24:54 | INFO | __main__:main:74 | Python版本: 3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-09-18 17:24:54 | INFO | __main__:main:75 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-18 17:24:54 | INFO | __main__:main:76 | 服务地址: http://127.0.0.1:5000
+2025-09-18 17:24:54 | INFO | __main__:main:110 | 开发模式运行
+2025-09-18 17:25:41 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 17:25:41 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 17:25:41 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 17:25:41 | INFO | __main__:main:73 | 股票数据采集API服务器启动
+2025-09-18 17:25:41 | INFO | __main__:main:74 | Python版本: 3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-09-18 17:25:41 | INFO | __main__:main:75 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-18 17:25:41 | INFO | __main__:main:76 | 服务地址: http://127.0.0.1:5000
+2025-09-18 17:25:41 | INFO | __main__:main:110 | 开发模式运行
+2025-09-18 17:26:19 | INFO | src.utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 17:26:19 | INFO | src.utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 17:26:19 | INFO | src.utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 17:26:19 | INFO | __main__:main:73 | 股票数据采集API服务器启动
+2025-09-18 17:26:19 | INFO | __main__:main:74 | Python版本: 3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]
+2025-09-18 17:26:19 | INFO | __main__:main:75 | 工作目录: /Users/guchao/Documents/GC_Work/ai_program/stock-project
+2025-09-18 17:26:19 | INFO | __main__:main:76 | 服务地址: http://127.0.0.1:5000
+2025-09-18 17:26:19 | INFO | __main__:main:110 | 开发模式运行
+2025-09-18 23:36:11 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:36:11 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:36:11 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:36:11 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:36:11 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:36:11 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:36:11 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:36:11 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:36:11 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:36:28 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:36:28 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:36:28 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:36:28 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:36:28 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:36:28 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:36:28 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:36:28 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:36:28 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:38:42 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:38:42 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:38:42 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:38:42 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:38:42 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:38:42 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:39:04 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:39:04 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:39:04 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:52:35 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:52:35 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:52:35 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:52:35 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:52:35 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:52:35 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:52:44 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:52:44 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:52:44 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:57:39 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:57:39 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:57:39 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:57:39 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:57:39 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:57:39 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:57:47 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-18 23:57:47 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-18 23:57:47 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-18 23:57:49 | INFO | __main__:start_api_server:138 | 启动股票数据API服务器...
+2025-09-18 23:57:50 | INFO | __main__:start_api_server:139 | 服务地址: http://0.0.0.0:5000
+2025-09-18 23:57:51 | INFO | __main__:start_api_server:140 | 调试模式: False
+2025-09-18 23:57:51 | INFO | __main__:start_api_server:141 | 配置环境: default
+2025-09-19 14:14:47 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 14:14:47 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 14:14:47 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 14:14:47 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 14:14:47 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 14:14:47 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 14:14:58 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 14:14:58 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 14:14:58 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 14:14:59 | INFO | __main__:start_api_server:138 | 启动股票数据API服务器...
+2025-09-19 14:15:00 | INFO | __main__:start_api_server:139 | 服务地址: http://0.0.0.0:5000
+2025-09-19 14:15:01 | INFO | __main__:start_api_server:140 | 调试模式: False
+2025-09-19 14:15:02 | INFO | __main__:start_api_server:141 | 配置环境: default
+2025-09-19 16:38:34 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:38:34 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:38:34 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:38:34 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:38:34 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:38:34 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:38:42 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:38:42 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:38:42 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:38:43 | INFO | __main__:start_api_server:138 | 启动股票数据API服务器...
+2025-09-19 16:38:44 | INFO | __main__:start_api_server:139 | 服务地址: http://0.0.0.0:5000
+2025-09-19 16:38:44 | INFO | __main__:start_api_server:140 | 调试模式: False
+2025-09-19 16:38:44 | INFO | __main__:start_api_server:141 | 配置环境: default
+2025-09-19 16:41:00 | ERROR | __main__:start_api_server:158 | 启动API服务器失败: View function mapping is overwriting an existing endpoint function: scheduler.start_scheduler
+2025-09-19 16:50:49 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:50:49 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:50:49 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:50:49 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:50:49 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:50:49 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:50:58 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:50:58 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:50:58 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:50:59 | INFO | __main__:start_api_server:138 | 启动股票数据API服务器...
+2025-09-19 16:51:00 | INFO | __main__:start_api_server:139 | 服务地址: http://0.0.0.0:5000
+2025-09-19 16:51:00 | INFO | __main__:start_api_server:140 | 调试模式: False
+2025-09-19 16:51:00 | INFO | __main__:start_api_server:141 | 配置环境: default
+2025-09-19 16:51:08 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:51:08 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:51:08 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:51:52 | ERROR | __main__:start_api_server:158 | 启动API服务器失败: 'Flask' object has no attribute 'before_first_request'
+2025-09-19 16:56:16 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:56:16 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:56:16 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:56:16 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:56:16 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:56:16 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:56:21 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:56:21 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:56:21 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:56:21 | INFO | __main__:start_api_server:138 | 启动股票数据API服务器...
+2025-09-19 16:56:21 | INFO | __main__:start_api_server:139 | 服务地址: http://0.0.0.0:5000
+2025-09-19 16:56:21 | INFO | __main__:start_api_server:140 | 调试模式: False
+2025-09-19 16:56:21 | INFO | __main__:start_api_server:141 | 配置环境: default
+2025-09-19 16:56:25 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:56:25 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:56:25 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:56:25 | INFO | __main__:create_app:129 | Flask应用创建完成
+2025-09-19 16:57:06 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:57:06 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:57:06 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:57:06 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:57:06 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:57:06 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:57:08 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:57:08 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:57:08 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:57:08 | INFO | __main__:start_api_server:138 | 启动股票数据API服务器...
+2025-09-19 16:57:08 | INFO | __main__:start_api_server:139 | 服务地址: http://0.0.0.0:5000
+2025-09-19 16:57:08 | INFO | __main__:start_api_server:140 | 调试模式: False
+2025-09-19 16:57:08 | INFO | __main__:start_api_server:141 | 配置环境: default
+2025-09-19 16:57:18 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 16:57:18 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 16:57:18 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 16:57:18 | INFO | __main__:create_app:129 | Flask应用创建完成
+2025-09-19 17:03:42 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:03:42 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:03:42 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:03:42 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:03:42 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:03:42 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:03:59 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:03:59 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:03:59 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:03:59 | INFO | __main__:start_api_server:138 | 启动股票数据API服务器...
+2025-09-19 17:03:59 | INFO | __main__:start_api_server:139 | 服务地址: http://0.0.0.0:5001
+2025-09-19 17:03:59 | INFO | __main__:start_api_server:140 | 调试模式: False
+2025-09-19 17:03:59 | INFO | __main__:start_api_server:141 | 配置环境: default
+2025-09-19 17:04:02 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:04:02 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:04:02 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:04:02 | INFO | __main__:create_app:129 | Flask应用创建完成
+2025-09-19 17:12:36 | INFO | __main__:initialize_app:110 | 初始化Flask应用...
+2025-09-19 17:12:36 | ERROR | __main__:internal_error:70 | 服务器内部错误: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-09-19 17:12:36 | ERROR | __main__:cleanup:127 | 应用上下文错误: name 'get_scheduler_service' is not defined
+2025-09-19 17:19:35 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:19:35 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:19:35 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:19:35 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:19:35 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:19:35 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:19:43 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:19:43 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:19:43 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:19:43 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-19 17:19:43 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-19 17:19:43 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-19 17:19:43 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-19 17:19:47 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:19:47 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:19:47 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:19:47 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-19 17:19:58 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-19 17:19:59 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-19 17:20:02 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-19 17:20:19 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-01-01 到 2025-01-05, 复权方式: qfq, 股票数量: 1
+2025-09-19 17:20:29 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:20:29 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:20:29 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:20:52 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-01-01 到 2025-01-05, 复权方式: qfq
+2025-09-19 17:20:58 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-19 17:21:56 | ERROR | app.services.stock_service:collect_history_data:108 | 历史数据采集失败: 'schedule_time'
+2025-09-19 17:22:01 | ERROR | app.controllers.stock_controller:decorated_function:37 | 服务器错误: 历史数据采集失败: 'schedule_time'
+2025-09-19 17:22:03 | ERROR | app.controllers.stock_controller:decorated_function:38 | 错误堆栈: Traceback (most recent call last):
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/services/stock_service.py", line 73, in collect_history_data
+    scheduler = self._get_scheduler()
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/services/stock_service.py", line 36, in _get_scheduler
+    self.scheduler = StockDataScheduler()
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/scheduler/task_scheduler.py", line 20, in __init__
+    self.schedule_time = DATA_COLLECTION_CONFIG['schedule_time']
+KeyError: 'schedule_time'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/controllers/stock_controller.py", line 29, in decorated_function
+    return f(*args, **kwargs)
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/controllers/stock_controller.py", line 115, in collect_history_data
+    result = stock_service.collect_history_data(request_obj)
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/services/stock_service.py", line 109, in collect_history_data
+    raise Exception(f"历史数据采集失败: {str(e)}")
+Exception: 历史数据采集失败: 'schedule_time'
+
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:28:01 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-19 17:28:01 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-19 17:28:01 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-19 17:28:01 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:28:01 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:28:01 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-19 17:28:10 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-19 17:28:10 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-19 17:28:14 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-19 17:28:14 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-01-01 到 2025-01-05, 复权方式: qfq, 股票数量: 1
+2025-09-19 17:28:14 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:28:14 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:28:14 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:28:20 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-01-01 到 2025-01-05, 复权方式: qfq
+2025-09-19 17:28:21 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-19 17:28:22 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-19 17:28:22 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-19 17:28:24 | ERROR | core.kafka.kafka_producer:_connect:50 | Kafka生产者连接失败: NoBrokersAvailable
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:31:03 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-19 17:31:03 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-19 17:31:03 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-19 17:31:03 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:31:03 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:31:03 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-19 17:31:06 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-19 17:31:06 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-19 17:31:08 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-19 17:31:08 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-01-01 到 2025-01-05, 复权方式: qfq, 股票数量: 1
+2025-09-19 17:31:08 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:31:08 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:31:08 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:31:11 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-01-01 到 2025-01-05, 复权方式: qfq
+2025-09-19 17:31:11 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-19 17:31:11 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-19 17:31:11 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-19 17:31:11 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-19 17:31:11 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-19 17:31:11 | ERROR | app.services.stock_service:collect_history_data:108 | 历史数据采集失败: StockDataScheduler.setup_history_schedule_once() got an unexpected keyword argument 'execute_now'
+2025-09-19 17:31:11 | ERROR | app.controllers.stock_controller:decorated_function:37 | 服务器错误: 历史数据采集失败: StockDataScheduler.setup_history_schedule_once() got an unexpected keyword argument 'execute_now'
+2025-09-19 17:31:11 | ERROR | app.controllers.stock_controller:decorated_function:38 | 错误堆栈: Traceback (most recent call last):
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/services/stock_service.py", line 74, in collect_history_data
+    result = scheduler.setup_history_schedule_once(
+TypeError: StockDataScheduler.setup_history_schedule_once() got an unexpected keyword argument 'execute_now'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/controllers/stock_controller.py", line 29, in decorated_function
+    return f(*args, **kwargs)
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/controllers/stock_controller.py", line 115, in collect_history_data
+    result = stock_service.collect_history_data(request_obj)
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/services/stock_service.py", line 109, in collect_history_data
+    raise Exception(f"历史数据采集失败: {str(e)}")
+Exception: 历史数据采集失败: StockDataScheduler.setup_history_schedule_once() got an unexpected keyword argument 'execute_now'
+
+2025-09-19 17:31:44 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-19 17:31:44 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-19 17:31:47 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-19 17:31:47 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-01-01 到 2025-01-05, 复权方式: qfq, 股票数量: 1
+2025-09-19 17:31:49 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-01-01 到 2025-01-05, 复权方式: qfq
+2025-09-19 17:31:49 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-19 17:31:49 | ERROR | app.services.stock_service:collect_history_data:108 | 历史数据采集失败: StockDataScheduler.setup_history_schedule_once() got an unexpected keyword argument 'execute_now'
+2025-09-19 17:31:49 | ERROR | app.controllers.stock_controller:decorated_function:37 | 服务器错误: 历史数据采集失败: StockDataScheduler.setup_history_schedule_once() got an unexpected keyword argument 'execute_now'
+2025-09-19 17:31:49 | ERROR | app.controllers.stock_controller:decorated_function:38 | 错误堆栈: Traceback (most recent call last):
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/services/stock_service.py", line 74, in collect_history_data
+    result = scheduler.setup_history_schedule_once(
+TypeError: StockDataScheduler.setup_history_schedule_once() got an unexpected keyword argument 'execute_now'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/controllers/stock_controller.py", line 29, in decorated_function
+    return f(*args, **kwargs)
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/controllers/stock_controller.py", line 115, in collect_history_data
+    result = stock_service.collect_history_data(request_obj)
+  File "/Users/guchao/Documents/GC_Work/ai_program/stock-project/app/services/stock_service.py", line 109, in collect_history_data
+    raise Exception(f"历史数据采集失败: {str(e)}")
+Exception: 历史数据采集失败: StockDataScheduler.setup_history_schedule_once() got an unexpected keyword argument 'execute_now'
+
+2025-09-19 17:32:14 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-19 17:32:14 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-19 17:32:16 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-19 17:32:16 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-01-01 到 2025-01-05, 复权方式: qfq, 股票数量: 1
+2025-09-19 17:32:17 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-01-01 到 2025-01-05, 复权方式: qfq
+2025-09-19 17:32:17 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:34:01 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-19 17:34:01 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-19 17:34:01 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-19 17:34:01 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:34:01 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:34:01 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-19 17:39:26 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-19 17:39:26 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-19 17:39:29 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-19 17:39:29 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-01-01 到 2025-01-05, 复权方式: qfq, 股票数量: 1
+2025-09-19 17:39:29 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:39:29 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:39:29 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:39:30 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-01-01 到 2025-01-05, 复权方式: qfq
+2025-09-19 17:39:30 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-19 17:39:30 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-19 17:39:30 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-19 17:39:30 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-19 17:39:30 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-19 17:39:40 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-01-01 到 2025-01-05)
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:40:14 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-19 17:40:14 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-19 17:40:14 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-19 17:40:14 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:40:14 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:40:14 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-19 17:40:17 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-19 17:40:17 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-19 17:40:19 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-19 17:40:22 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-01-01 到 2025-01-05, 复权方式: qfq, 股票数量: 1
+2025-09-19 17:40:22 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-19 17:40:22 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-19 17:40:22 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-19 17:40:26 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-01-01 到 2025-01-05, 复权方式: qfq
+2025-09-19 17:40:26 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-19 17:40:26 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-19 17:40:26 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-19 17:40:26 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-19 17:40:26 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-19 17:40:34 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-01-01 到 2025-01-05)
+2025-09-19 17:40:41 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-01-01 到 2025-01-05, 股票数量: 1, 复权方式: qfq
+2025-09-19 17:40:52 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-01-01 到 2025-01-05)，复权方式: qfq
+2025-09-19 17:40:52 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-19 17:40:52 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-19 17:40:52 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-01-01 到 2025-01-05)，第 1 次尝试
+2025-09-19 17:40:52 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 2 条记录
+2025-09-19 17:40:52 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 2 条记录
+2025-09-19 17:40:52 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-19 17:40:53 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-19 17:40:53 | ERROR | core.data_storage.daily_storage:save_daily_data:81 | Elasticsearch连接不可用
+2025-09-19 17:40:53 | ERROR | core.data_collector.history_collector:collect_history_data_by_codes:325 | 第 1 批数据保存失败
+2025-09-19 17:40:53 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:335 | 按代码列表历史数据采集完成: 成功 1, 失败 0, 总计 1
+2025-09-19 17:41:00 | INFO | scheduler.task_scheduler:collect_history_data_by_api:122 | 接口历史数据采集任务完成: 成功 1, 失败 0, 总计 1
+2025-09-19 17:41:30 | INFO | app.services.stock_service:collect_history_data:97 | 历史数据采集完成: 成功率 100.0% (1/1), 耗时 43.16秒
+2025-09-19 17:43:24 | INFO | app.controllers.stock_controller:collect_history_data:120 | 历史数据采集完成: 总数 1, 成功 1, 失败 0
+2025-09-19 17:47:59 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-19 17:47:59 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-19 17:48:01 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-19 17:48:01 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-19 17:48:06 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-19 17:48:06 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-19 17:48:24 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-19 17:48:24 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-19 17:48:40 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-19 17:49:01 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-19 17:49:22 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-19 17:49:35 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-19 17:49:36 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:09:07 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-22 09:09:07 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-22 09:09:07 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-22 09:09:07 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:09:07 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:09:07 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-22 09:18:16 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 09:18:16 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 09:18:19 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 09:18:36 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 09:18:39 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:18:39 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:18:39 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:18:45 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 09:18:47 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 09:18:49 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 09:18:49 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-22 09:18:49 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-22 09:18:49 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 09:19:05 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 09:19:15 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 09:19:39 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 09:19:43 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 09:19:48 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 09:22:03 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 09:22:03 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 09:22:29 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:22:29 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:22:29 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:22:29 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:22:29 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:22:29 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:22:30 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:22:30 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:22:30 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:22:30 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-22 09:22:30 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-22 09:22:30 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-22 09:22:30 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-22 09:22:30 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:22:30 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:22:30 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:22:30 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-22 09:23:18 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 09:23:18 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 09:23:21 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 09:23:21 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 09:23:21 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:23:21 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:23:21 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:23:22 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 09:23:22 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 09:23:22 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 09:23:22 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-22 09:23:22 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-22 09:23:22 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 09:23:31 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 09:23:31 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 09:23:40 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 09:23:43 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 09:23:51 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 09:23:53 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 09:23:54 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:35:18 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-22 09:35:18 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-22 09:35:18 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-22 09:35:18 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:35:18 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:35:18 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-22 09:35:35 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 09:35:35 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 09:35:39 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 09:35:39 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 09:35:39 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 09:35:39 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 09:35:39 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 09:35:42 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 09:35:42 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 09:35:42 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 09:35:42 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-22 09:35:42 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-22 09:35:42 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 09:37:33 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 09:37:33 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 09:37:37 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 09:37:37 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 09:37:37 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 09:37:37 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 09:37:38 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:04:37 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-22 10:04:37 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-22 10:04:37 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-22 10:04:37 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:04:37 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:04:37 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-22 10:08:21 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 10:08:21 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 10:08:21 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 10:08:21 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 10:08:21 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:08:21 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:08:21 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:08:21 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 10:08:21 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 10:08:21 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:08:21 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-22 10:08:21 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-22 10:08:21 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:08:21 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 10:08:21 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 10:08:41 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 10:08:41 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 10:08:41 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 10:08:44 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 10:08:44 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 10:11:08 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 10:11:28 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 10:11:50 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-22 10:11:54 | ERROR | core.data_storage.daily_storage:save_daily_data:81 | Elasticsearch连接不可用
+2025-09-22 10:12:17 | ERROR | core.data_collector.history_collector:collect_history_data_by_codes:325 | 第 1 批数据保存失败
+2025-09-22 10:12:21 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:335 | 按代码列表历史数据采集完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:12:29 | INFO | scheduler.task_scheduler:collect_history_data_by_api:122 | 接口历史数据采集任务完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:12:29 | INFO | app.services.stock_service:collect_history_data:97 | 历史数据采集完成: 成功率 100.0% (1/1), 耗时 247.85秒
+2025-09-22 10:12:32 | INFO | app.controllers.stock_controller:collect_history_data:120 | 历史数据采集完成: 总数 1, 成功 1, 失败 0
+2025-09-22 10:20:09 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 10:20:09 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 10:20:09 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 10:20:09 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 10:20:09 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 10:20:09 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 10:20:09 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 10:20:09 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 10:20:28 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 10:20:28 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 10:20:28 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 10:20:38 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 10:20:38 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 10:20:56 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 10:21:02 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 10:21:13 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-22 10:22:08 | ERROR | core.data_storage.daily_storage:save_daily_data:81 | Elasticsearch连接不可用
+2025-09-22 10:22:11 | ERROR | core.data_collector.history_collector:collect_history_data_by_codes:325 | 第 1 批数据保存失败
+2025-09-22 10:22:11 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:335 | 按代码列表历史数据采集完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:22:11 | INFO | scheduler.task_scheduler:collect_history_data_by_api:122 | 接口历史数据采集任务完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:22:11 | INFO | app.services.stock_service:collect_history_data:97 | 历史数据采集完成: 成功率 100.0% (1/1), 耗时 121.67秒
+2025-09-22 10:22:15 | INFO | app.controllers.stock_controller:collect_history_data:120 | 历史数据采集完成: 总数 1, 成功 1, 失败 0
+2025-09-22 10:22:36 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 10:22:36 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 10:22:36 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 10:22:36 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 10:22:36 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 10:22:36 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 10:22:36 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 10:22:36 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 10:22:42 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 10:22:42 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 10:22:42 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 10:22:44 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 10:22:44 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 10:22:49 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 10:22:49 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 10:23:44 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: 'max_retries'
+2025-09-22 10:23:45 | ERROR | core.data_storage.daily_storage:save_daily_data:81 | Elasticsearch连接不可用
+2025-09-22 10:23:45 | ERROR | core.data_collector.history_collector:collect_history_data_by_codes:325 | 第 1 批数据保存失败
+2025-09-22 10:23:45 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:335 | 按代码列表历史数据采集完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:23:45 | INFO | scheduler.task_scheduler:collect_history_data_by_api:122 | 接口历史数据采集任务完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:23:45 | INFO | app.services.stock_service:collect_history_data:97 | 历史数据采集完成: 成功率 100.0% (1/1), 耗时 69.32秒
+2025-09-22 10:23:47 | INFO | app.controllers.stock_controller:collect_history_data:120 | 历史数据采集完成: 总数 1, 成功 1, 失败 0
+2025-09-22 10:23:52 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 10:23:52 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 10:23:52 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 10:23:52 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 10:23:52 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 10:23:52 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 10:23:52 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 10:23:52 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 10:23:57 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 10:23:57 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 10:23:57 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 10:25:06 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 10:25:06 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 10:25:22 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 10:25:22 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:25:49 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-22 10:25:49 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-22 10:25:49 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-22 10:25:49 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:25:49 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:25:49 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-22 10:27:39 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 10:27:39 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 10:27:39 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 10:27:39 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 10:27:39 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:27:39 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:27:39 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:27:39 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 10:27:39 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 10:27:39 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:27:41 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: Elasticsearch.__init__() got an unexpected keyword argument 'timeout'
+2025-09-22 10:27:41 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-22 10:27:41 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:27:41 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 10:27:41 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 10:27:45 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 10:27:45 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 10:27:45 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 10:27:46 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 10:27:46 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 10:27:52 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 10:27:52 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 10:29:14 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:29:14 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:29:14 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:29:14 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:29:14 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:29:14 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:29:15 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:29:15 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:29:15 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:29:15 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-22 10:29:15 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-22 10:29:15 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-22 10:29:15 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-22 10:29:15 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:29:15 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:29:15 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:29:15 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-22 10:29:21 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 10:29:21 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 10:29:21 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 10:29:21 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 10:29:21 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:29:21 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:29:21 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:29:21 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 10:29:21 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 10:29:21 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:29:24 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: URL must include a 'scheme', 'host', and 'port' component (ie 'https://localhost:9200')
+2025-09-22 10:29:24 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-22 10:29:24 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:29:24 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 10:29:24 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 10:29:26 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 10:29:26 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 10:29:26 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 10:29:27 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 10:29:27 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 10:29:32 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 10:29:32 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 10:29:53 | ERROR | core.data_storage.daily_storage:__init__:50 | 初始化Elasticsearch连接失败: URL must include a 'scheme', 'host', and 'port' component (ie 'https://localhost:9200')
+2025-09-22 10:29:53 | ERROR | core.data_storage.daily_storage:save_daily_data:81 | Elasticsearch连接不可用
+2025-09-22 10:29:53 | ERROR | core.data_collector.history_collector:collect_history_data_by_codes:325 | 第 1 批数据保存失败
+2025-09-22 10:29:53 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:335 | 按代码列表历史数据采集完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:29:53 | INFO | scheduler.task_scheduler:collect_history_data_by_api:122 | 接口历史数据采集任务完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:29:53 | INFO | app.services.stock_service:collect_history_data:97 | 历史数据采集完成: 成功率 100.0% (1/1), 耗时 31.66秒
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:44:05 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-22 10:44:05 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-22 10:44:05 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-22 10:44:05 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:44:05 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:44:05 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-22 10:44:16 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 10:44:16 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 10:44:16 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 10:44:16 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 10:44:16 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:44:16 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:44:16 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:44:16 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 10:44:16 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 10:44:16 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:44:18 | ERROR | core.data_storage.daily_storage:__init__:51 | 初始化Elasticsearch连接失败: Elasticsearch.__init__() got an unexpected keyword argument 'scheme'
+2025-09-22 10:44:18 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-22 10:44:18 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:44:18 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 10:44:18 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 10:44:20 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 10:44:20 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 10:44:20 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 10:44:22 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 10:44:23 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 10:44:27 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 10:44:27 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 10:45:25 | ERROR | core.data_storage.daily_storage:__init__:51 | 初始化Elasticsearch连接失败: Elasticsearch.__init__() got an unexpected keyword argument 'scheme'
+2025-09-22 10:45:25 | ERROR | core.data_storage.daily_storage:save_daily_data:82 | Elasticsearch连接不可用
+2025-09-22 10:45:25 | ERROR | core.data_collector.history_collector:collect_history_data_by_codes:325 | 第 1 批数据保存失败
+2025-09-22 10:45:25 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:335 | 按代码列表历史数据采集完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:45:25 | INFO | scheduler.task_scheduler:collect_history_data_by_api:122 | 接口历史数据采集任务完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:45:25 | INFO | app.services.stock_service:collect_history_data:97 | 历史数据采集完成: 成功率 100.0% (1/1), 耗时 68.93秒
+2025-09-22 10:45:30 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:45:30 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:45:30 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:45:31 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:45:31 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:45:31 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:45:31 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:45:31 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:45:31 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:45:31 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-22 10:45:31 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-22 10:45:31 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-22 10:45:31 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-22 10:45:31 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:45:31 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:45:31 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:45:31 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-22 10:45:39 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 10:45:39 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 10:45:39 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 10:45:39 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 10:45:39 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:45:39 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:45:39 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:45:39 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 10:45:39 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 10:45:39 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:45:42 | ERROR | core.data_storage.daily_storage:__init__:51 | 初始化Elasticsearch连接失败: URL must include a 'scheme', 'host', and 'port' component (ie 'https://localhost:9200')
+2025-09-22 10:45:42 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-22 10:45:42 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:45:42 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 10:45:42 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 10:45:46 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 10:45:46 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 10:45:46 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 10:45:48 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 10:45:48 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 10:45:53 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 10:45:53 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:48:03 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-22 10:48:03 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-22 10:48:03 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-22 10:48:03 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:48:03 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:48:03 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-22 10:48:08 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 10:48:08 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 10:48:08 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 10:48:08 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 10:48:08 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 10:48:08 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 10:48:08 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 10:48:08 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 10:48:08 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 10:48:08 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:48:11 | INFO | core.data_storage.daily_storage:__init__:44 | Elasticsearch连接成功
+2025-09-22 10:48:11 | INFO | core.data_storage.daily_storage:_ensure_index_exists:58 | 创建日线数据索引: stock_daily_data
+2025-09-22 10:48:12 | INFO | core.data_storage.daily_storage:_ensure_index_exists:63 | 日线数据索引 stock_daily_data 创建成功
+2025-09-22 10:48:12 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-22 10:48:12 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 10:48:12 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 10:48:12 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 10:48:22 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 10:48:22 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 10:48:22 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 10:48:25 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 10:48:25 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 10:48:28 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 10:48:28 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 10:49:09 | INFO | core.data_storage.daily_storage:__init__:44 | Elasticsearch连接成功
+2025-09-22 10:49:12 | INFO | core.data_storage.daily_storage:_ensure_index_exists:65 | 日线数据索引 stock_daily_data 已存在
+2025-09-22 10:49:46 | INFO | core.data_storage.daily_storage:save_daily_data:90 | 开始保存日线数据，共 4 条记录
+2025-09-22 10:51:11 | ERROR | core.data_storage.daily_storage:save_daily_data:133 | 批次 1 保存失败: 4 document(s) failed to index.
+2025-09-22 10:51:16 | INFO | core.data_storage.daily_storage:save_daily_data:138 | 日线数据保存完成: 成功 0 条, 失败 4 条
+2025-09-22 10:51:17 | ERROR | core.data_collector.history_collector:collect_history_data_by_codes:325 | 第 1 批数据保存失败
+2025-09-22 10:51:17 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:335 | 按代码列表历史数据采集完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:51:17 | INFO | scheduler.task_scheduler:collect_history_data_by_api:122 | 接口历史数据采集任务完成: 成功 1, 失败 0, 总计 1
+2025-09-22 10:51:17 | INFO | app.services.stock_service:collect_history_data:97 | 历史数据采集完成: 成功率 100.0% (1/1), 耗时 188.95秒
+2025-09-22 10:51:20 | INFO | app.controllers.stock_controller:collect_history_data:120 | 历史数据采集完成: 总数 1, 成功 1, 失败 0
+2025-09-22 11:01:30 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 11:01:30 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 11:01:30 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 11:01:30 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 11:01:30 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 11:01:30 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 11:01:30 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 11:01:30 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 11:01:39 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 11:01:39 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 11:01:39 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 11:01:40 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 11:01:40 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 11:01:43 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 11:01:43 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 11:01:53 | INFO | core.data_storage.daily_storage:__init__:44 | Elasticsearch连接成功
+2025-09-22 11:01:53 | INFO | core.data_storage.daily_storage:_ensure_index_exists:65 | 日线数据索引 stock_daily_data 已存在
+2025-09-22 11:01:53 | INFO | core.data_storage.daily_storage:save_daily_data:90 | 开始保存日线数据，共 4 条记录
+2025-09-22 11:22:50 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 11:22:50 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 11:22:50 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 11:22:50 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 11:22:50 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 11:22:50 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 11:22:50 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 11:22:50 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 11:22:50 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 11:22:50 | INFO | __main__:start_api_server:139 | 启动股票数据API服务器...
+2025-09-22 11:22:50 | INFO | __main__:start_api_server:140 | 服务地址: http://0.0.0.0:5001
+2025-09-22 11:22:50 | INFO | __main__:start_api_server:141 | 调试模式: False
+2025-09-22 11:22:50 | INFO | __main__:start_api_server:142 | 配置环境: default
+2025-09-22 11:22:51 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 11:22:51 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 11:22:51 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 11:22:51 | INFO | __main__:create_app:130 | Flask应用创建完成
+2025-09-22 11:22:57 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 11:22:57 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 11:22:57 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 11:22:57 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 11:22:57 | INFO | utils.logger_config:setup_logger:38 | 日志系统初始化完成
+2025-09-22 11:22:57 | INFO | utils.logger_config:setup_logger:39 | 日志级别: INFO
+2025-09-22 11:22:57 | INFO | utils.logger_config:setup_logger:40 | 日志文件: /Users/guchao/Documents/GC_Work/ai_program/stock-project/logs/stock_collector.log
+2025-09-22 11:22:57 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 11:22:57 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 11:22:57 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 11:23:00 | INFO | core.data_storage.daily_storage:__init__:44 | Elasticsearch连接成功
+2025-09-22 11:23:00 | INFO | core.data_storage.daily_storage:_ensure_index_exists:65 | 日线数据索引 stock_daily_data 已存在
+2025-09-22 11:23:00 | INFO | core.kafka.kafka_producer:_connect:47 | Kafka生产者连接成功
+2025-09-22 11:23:00 | INFO | core.data_storage.es_storage:_connect:43 | Elasticsearch连接成功
+2025-09-22 11:23:00 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 11:23:00 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 11:23:04 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 11:23:04 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 11:23:04 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 11:23:05 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 11:23:05 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 11:23:10 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 11:23:10 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 11:23:13 | INFO | core.data_storage.daily_storage:__init__:44 | Elasticsearch连接成功
+2025-09-22 11:23:13 | INFO | core.data_storage.daily_storage:_ensure_index_exists:65 | 日线数据索引 stock_daily_data 已存在
+2025-09-22 11:23:13 | INFO | core.data_storage.daily_storage:save_daily_data:90 | 开始保存日线数据，共 4 条记录
+2025-09-22 11:23:21 | ERROR | core.data_storage.daily_storage:save_daily_data:133 | 批次 1 保存失败: 4 document(s) failed to index.
+2025-09-22 11:23:21 | INFO | core.data_storage.daily_storage:save_daily_data:138 | 日线数据保存完成: 成功 0 条, 失败 4 条
+2025-09-22 11:23:21 | ERROR | core.data_collector.history_collector:collect_history_data_by_codes:325 | 第 1 批数据保存失败
+2025-09-22 11:23:21 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:335 | 按代码列表历史数据采集完成: 成功 1, 失败 0, 总计 1
+2025-09-22 11:23:21 | INFO | scheduler.task_scheduler:collect_history_data_by_api:122 | 接口历史数据采集任务完成: 成功 1, 失败 0, 总计 1
+2025-09-22 11:23:21 | INFO | app.services.stock_service:collect_history_data:97 | 历史数据采集完成: 成功率 100.0% (1/1), 耗时 24.14秒
+2025-09-22 11:23:24 | INFO | app.controllers.stock_controller:collect_history_data:120 | 历史数据采集完成: 总数 1, 成功 1, 失败 0
+2025-09-22 11:24:26 | INFO | __main__:initialize_app:111 | 初始化Flask应用...
+2025-09-22 11:24:26 | INFO | __main__:initialize_app:115 | 调度器服务已初始化
+2025-09-22 11:24:26 | INFO | app.controllers.stock_controller:collect_history_data:92 | 收到历史数据采集请求
+2025-09-22 11:24:26 | INFO | app.controllers.stock_controller:collect_history_data:105 | 历史数据采集参数: 2025-09-15 到 2025-09-18, 复权方式: qfq, 股票数量: 1
+2025-09-22 11:24:26 | INFO | app.services.stock_service:collect_history_data:60 | 开始采集历史数据: 2025-09-15 到 2025-09-18, 复权方式: qfq
+2025-09-22 11:24:26 | INFO | app.services.stock_service:collect_history_data:68 | 指定股票代码: ['600000']
+2025-09-22 11:24:26 | INFO | scheduler.task_scheduler:setup_history_schedule_once:166 | 设置历史数据采集一次性任务 (2025-09-15 到 2025-09-18)
+2025-09-22 11:24:26 | INFO | scheduler.task_scheduler:collect_history_data_by_api:110 | 开始通过接口采集历史数据: 2025-09-15 到 2025-09-18, 股票数量: 1, 复权方式: qfq
+2025-09-22 11:24:30 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:272 | 开始按代码列表采集历史行情数据 (2025-09-15 到 2025-09-18)，复权方式: qfq
+2025-09-22 11:24:30 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:282 | 共需要采集 1 个股票的历史数据
+2025-09-22 11:24:30 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:289 | 正在处理第 1 批数据 (1 个股票)
+2025-09-22 11:24:31 | INFO | core.data_collector.history_collector:get_stock_history_data:49 | 正在获取股票 600000 的历史数据 (2025-09-15 到 2025-09-18)，第 1 次尝试
+2025-09-22 11:24:32 | INFO | core.data_collector.history_collector:get_stock_history_data:61 | 成功获取股票 600000 的历史数据，共 4 条记录
+2025-09-22 11:24:35 | INFO | core.data_collector.history_collector:process_history_data:132 | 股票 600000 历史数据处理完成，共处理 4 条记录
+2025-09-22 11:24:35 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:304 | 股票 600000 历史数据采集成功
+2025-09-22 11:24:45 | INFO | core.data_storage.daily_storage:__init__:44 | Elasticsearch连接成功
+2025-09-22 11:24:45 | INFO | core.data_storage.daily_storage:_ensure_index_exists:58 | 创建日线数据索引: stock_daily_data
+2025-09-22 11:24:47 | INFO | core.data_storage.daily_storage:_ensure_index_exists:63 | 日线数据索引 stock_daily_data 创建成功
+2025-09-22 11:24:48 | INFO | core.data_storage.daily_storage:save_daily_data:90 | 开始保存日线数据，共 4 条记录
+2025-09-22 11:25:08 | INFO | core.data_storage.daily_storage:save_daily_data:129 | 批次 1 保存完成: 成功 4 条
+2025-09-22 11:25:17 | INFO | core.data_storage.daily_storage:save_daily_data:138 | 日线数据保存完成: 成功 4 条, 失败 0 条
+2025-09-22 11:25:19 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:323 | 第 1 批数据保存成功，共 4 条记录
+2025-09-22 11:25:19 | INFO | core.data_collector.history_collector:collect_history_data_by_codes:335 | 按代码列表历史数据采集完成: 成功 1, 失败 0, 总计 1
+2025-09-22 11:25:19 | INFO | scheduler.task_scheduler:collect_history_data_by_api:122 | 接口历史数据采集任务完成: 成功 1, 失败 0, 总计 1
+2025-09-22 11:25:19 | INFO | app.services.stock_service:collect_history_data:97 | 历史数据采集完成: 成功率 100.0% (1/1), 耗时 52.33秒
+2025-09-22 11:25:21 | INFO | app.controllers.stock_controller:collect_history_data:120 | 历史数据采集完成: 总数 1, 成功 1, 失败 0
